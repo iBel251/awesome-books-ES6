@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/mavericks-db/awesome-books-ES6#readme",
   "dependencies": {
-    "@lhci/cli": "^0.7.2"
+    "@lhci/cli": "^0.7.2",
+    "sass": "^1.50.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
