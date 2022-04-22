@@ -11,7 +11,7 @@ class BookObject {
     this.id = id;
   }
 
-  static displayBooks() {
+  static displayBooks = () => {
     collection.innerHTML = '';
     id = JSON.parse(localStorage.getItem('maxID'));
     const keys = Object.keys(localStorage);
@@ -22,11 +22,11 @@ class BookObject {
     });
   }
 
-  static addBook(title, author, id) {
+  static addBook = (title, author, id) => {
     this.createElements(title, author, id);
   }
 
-  static createElements(title, author, id) {
+  static createElements = (title, author, id) => {
     const remBtn = [];
     const div = [];
     div[id] = document.createElement('div');
@@ -50,11 +50,11 @@ class BookObject {
     collection.style.border = '3px solid black';
   }
 
-  static storeLS(book, id) {
+  static storeLS = (book, id) => {
     localStorage.setItem(id, JSON.stringify(book));
   }
 
-  static clearInputs() {
+  static clearInputs = () => {
     document.querySelector('#title').value = '';
     document.querySelector('#author').value = '';
   }
@@ -74,7 +74,7 @@ addBtn.addEventListener('click', () => {
   }
 });
 
-window.onload = function reset() {
+window.onload = () => {
   BookObject.displayBooks();
   if (collection.innerHTML === '') {
     collection.style.border = 'none';
