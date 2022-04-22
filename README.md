@@ -19,7 +19,7 @@ Screenshots can be found in the repository.
 
 ## Live Demo 🔗
 
-Click [here](https://mavericks-db.github.io/awesome-books-ES6/)👈
+Check out the live demo [here](https://mavericks-db.github.io/awesome-books-ES6/)👈
 
 ## Getting Started
 
@@ -27,7 +27,8 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-Install a code editor like Visual Studio Code. Install Git and Node.js.
+- [x] A web browser like Google Chrome
+- [x] A code editor like Visual Studio Code with Git and Node.js.
 
 You can check if Git is installed by running the following command in the terminal.
 ```
@@ -57,7 +58,7 @@ Kindly modify the files as needed.
 
 ### Run tests
 
-To check for linters, use the files provided by Microverse. A GitHub action is also set to run during pull request.
+To check for linters, use the files provided by [Microverse](https://github.com/microverseinc/linters-config). A GitHub action is also set to run during pull request.
 ```
 $ npm install
 ```
